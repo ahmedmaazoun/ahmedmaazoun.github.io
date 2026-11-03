@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ahmed Maazoun | Group CEO, Managing Director and Executive Leader with over 22 years of international experience.">
+<title>Ahmed Maazoun | أحمد المعزون</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Tahoma,sans-serif;color:#1d3040;background:#f5f7fa;line-height:1.8}header{background:#112e48;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;gap:12px}button{border:1px solid white;background:transparent;color:white;padding:9px 17px;border-radius:8px;font-weight:bold}.hero{background:linear-gradient(125deg,#112e48,#23718b);color:white;padding:65px 7%}.hero h1{font-size:clamp(35px,7vw,65px);margin:0}.hero h2{font-size:20px;font-weight:normal}.container{max-width:1000px;margin:auto;padding:30px 20px}.stats,.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}.stat,.card{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 10px #102a4310}.stat strong{display:block;font-size:32px;color:#18718c}section{margin:35px 0}h3{font-size:25px;color:#153f5a}.contact{background:#e2eff4;padding:25px;border-radius:12px}a{color:#075c7e;overflow-wrap:anywhere}footer{text-align:center;color:#687a87;padding:25px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Ahmed Maazoun","alternateName":"أحمد المعزون","jobTitle":"Group Chief Executive Officer","email":"ahmed.maazoun@gmail.com","telephone":"+966557065384","url":"https://ahmedmaazoun.github.io/","sameAs":["https://www.linkedin.com/in/ahmed-maazoun-922052376"]}
+</script>
+</head>
+<body>
+<header><strong>AHMED MAAZOUN</strong><button onclick="changeLanguage()" id="langButton">العربية</button></header>
+<div id="content"></div>
+<footer>© 2026 Ahmed Maazoun</footer>
+<script>
+let language="en";
+const texts={
+en:{
+name:"Ahmed Maazoun",role:"Group CEO | Managing Director | General Manager | Strategic Advisor",
+intro:"International executive leader with more than 22 years of experience across corporate strategy, transformation, manufacturing, FMCG, construction, logistics and international trade.",
+labels:["Years of experience","Employees led","International markets","Manufacturing facilities"],
+about:"Executive Profile",
+bio:"Currently Group Chief Executive Officer of Developed Business Contracting & Trading Co. (DEBCOM), Madinah, Saudi Arabia. Previously CEO of Hannibal Cosmetics & Cleaning Products and Quality Table Co., and CEO of Al Rabie Diapers & Baby Care Co. in Libya.",
+expertise:"Core Expertise",skills:["Corporate strategy and transformation","P&L leadership and financial performance","Manufacturing and supply chain management","Business development and international trade"],
+achievements:"Selected Achievements",wins:["Led organizations with annual revenues exceeding USD 42 million.","Managed budgets exceeding USD 101 million and international procurement exceeding USD 80 million annually.","Grew monthly sales from USD 100,000 to USD 3.5 million.","Achieved more than 200% net profit growth in one year and reduced operating costs by 33%.","Expanded a branch network from 8 to 26 locations within 24 months."],
+opportunities:"Executive Opportunities",target:"Open to Group CEO, CEO, Managing Director, General Manager, COO, Executive Director and Strategic Advisor roles in Saudi Arabia, GCC and international markets.",contact:"Contact"
+},
+ar:{
+name:"أحمد المعزون",role:"رئيس تنفيذي لمجموعة | مدير عام | عضو منتدب | مستشار استراتيجي",
+intro:"قيادي تنفيذي دولي بخبرة تتجاوز 22 عامًا في الاستراتيجية والتحول المؤسسي والتصنيع والسلع الاستهلاكية والمقاولات والخدمات اللوجستية والتجارة الدولية.",
+labels:["سنة خبرة","موظف تحت القيادة","سوقًا دولية","مرافق صناعية"],
+about:"الملف التنفيذي",
+bio:"يشغل حاليًا منصب الرئيس التنفيذي للمجموعة في شركة الأعمال المطورة للمقاولات والتجارة بالمدينة المنورة، المملكة العربية السعودية. شغل سابقًا منصب الرئيس التنفيذي لشركات حنبعل لمستحضرات التجميل والمنظفات وكواليتي تيبل، وشركة الربيع للحفاضات والعناية بالأطفال في ليبيا.",
+expertise:"مجالات الخبرة",skills:["الاستراتيجية والتحول المؤسسي","قيادة الربحية والأداء المالي","التصنيع وإدارة سلاسل الإمداد","تطوير الأعمال والتجارة الدولية"],
+achievements:"أبرز الإنجازات",wins:["قيادة مؤسسات تتجاوز إيراداتها السنوية 42 مليون دولار.","إدارة ميزانيات تتجاوز 101 مليون دولار ومشتريات دولية سنوية تفوق 80 مليون دولار.","زيادة المبيعات الشهرية من 100 ألف إلى 3.5 مليون دولار.","رفع صافي الربح بأكثر من 200% خلال عام وخفض التكاليف التشغيلية بنسبة 33%.","توسيع شبكة الفروع من 8 إلى 26 فرعًا خلال 24 شهرًا."],
+opportunities:"الفرص المهنية",target:"مهتم بفرص الرئيس التنفيذي للمجموعة والرئيس التنفيذي والمدير العام والعضو المنتدب ومدير العمليات والمستشار الاستراتيجي في السعودية ودول الخليج والأسواق الدولية.",contact:"التواصل"
+}};
+function render(){
+const t=texts[language];
+document.documentElement.lang=language;
+document.documentElement.dir=language==="ar"?"rtl":"ltr";
+document.getElementById("langButton").textContent=language==="en"?"العربية":"English";
+document.getElementById("content").innerHTML=
+'<div class="hero"><h1>'+t.name+'</h1><h2>'+t.role+'</h2><p>'+t.intro+'</p></div>'+
+'<main class="container"><div class="stats">'+["22+","650+","30+","8+"].map((n,i)=>'<div class="stat"><strong>'+n+'</strong>'+t.labels[i]+'</div>').join("")+'</div>'+
+'<section><h3>'+t.about+'</h3><p>'+t.bio+'</p></section>'+
+'<section><h3>'+t.expertise+'</h3><div class="cards">'+t.skills.map(s=>'<div class="card">'+s+'</div>').join("")+'</div></section>'+
+'<section><h3>'+t.achievements+'</h3><ul>'+t.wins.map(w=>'<li>'+w+'</li>').join("")+'</ul></section>'+
+'<section><h3>'+t.opportunities+'</h3><p>'+t.target+'</p></section>'+
+'<section class="contact"><h3>'+t.contact+'</h3><p>Madinah, Saudi Arabia</p><p><a href="mailto:ahmed.maazoun@gmail.com">ahmed.maazoun@gmail.com</a></p><p><a href="tel:+966557065384">+966 55 706 5384</a></p><p><a href="https://www.linkedin.com/in/ahmed-maazoun-922052376">LinkedIn</a></p></section></main>';
+}
+function changeLanguage(){language=language==="en"?"ar":"en";render()}
+render();
+</script>
+</body>
+</html>
